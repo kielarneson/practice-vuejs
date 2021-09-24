@@ -5,7 +5,7 @@ var app = new Vue({
   data: function () {
     return {
       message: "Hello from JavaScript!",
-      name: "My name is Kiel",
+      name: "Kiel",
     };
   },
   methods: {
