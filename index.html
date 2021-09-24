@@ -12,7 +12,12 @@
   <h1>Hello from HTML!</h1>
   <div id="app"> 
     {{ message }}
+    <br></br>
     {{ name }}
+    <br></br>
+    <button v-on:click="changeMessage()">Click me!</button>
+    <p>This is the message: {{ message }}</p>
+    <p>It has {{ message.length }} characters</p>
   </div>
 </body>
 </html>

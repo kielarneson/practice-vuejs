@@ -8,4 +8,9 @@ var app = new Vue({
       name: "My name is Kiel",
     };
   },
+  methods: {
+    changeMessage: function () {
+      this.message = "New message";
+    },
+  },
 });
