@@ -8,6 +8,7 @@ var app = new Vue({
       name: "Kiel",
       fruits: ["apple", "banana", "pear"],
       newFruit: "",
+      showExtraInfo: false,
     };
   },
   methods: {
