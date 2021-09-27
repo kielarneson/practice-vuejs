@@ -10,7 +10,7 @@
 </head>
 <body>
   <h1>Hello from HTML!</h1>
-  <div id="app"> 
+  <br id="app"> 
     <div>
       <h2>{{ message }}</h2>
     </div>
@@ -55,7 +55,7 @@
       <p>Change your name:</p>
       <input type="text" v-model="name" />
     </div>
-    
+
     <button v-on:click="changeMessage()">Click me!</button>
     <p>This is the message: {{ message }}</p>
     <p>It has {{ message.length }} characters</p>
