@@ -6,8 +6,10 @@ var app = new Vue({
     return {
       message: "Hello from JavaScript!",
       todos: [],
-      postTodo: [],
     };
+  },
+  created: function () {
+    console.log(this.loadTodos());
   },
   methods: {
     loadTodos: function () {
@@ -15,18 +17,6 @@ var app = new Vue({
         console.log(response.data);
         this.todos = response.data;
       });
-    },
-    postTodos: function () {
-      axios
-        .post("https://jsonplaceholder.typicode.com/todos", {
-          userId: 23,
-          title: "Meet the Flintstones",
-          completed: true,
-        })
-        .then((response) => {
-          console.log(response.data);
-          this.postTodo = response.data;
-        });
     },
   },
 });
