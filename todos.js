@@ -7,4 +7,9 @@ var app = new Vue({
       message: "Hello from JavaScript!",
     };
   },
+  methods: {
+    loadTodos: function () {
+      console.log("hello");
+    },
+  },
 });
