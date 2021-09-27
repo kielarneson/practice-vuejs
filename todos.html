@@ -12,6 +12,9 @@
     <div id="app">
       <h1>{{ message }}</h1>
       <button v-on:click="loadTodos()">Load Todos</button>
+      <p v-for="todo in todos">{{ todo }}</p>
+      <button v-on:click="postTodos()">Add Todo</button>
+      <p>{{ postTodo }}</p>
     </div>
   </body>
 </html>
